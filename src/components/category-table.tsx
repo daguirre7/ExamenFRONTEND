@@ -2,7 +2,6 @@ import React,{useState,useEffect} from "react";
 
 import {getCategoriesWLanguages, deleteCategory} from "../services/categories";
 import Modal from "./modal";
-import { Link } from "react-router-dom";
 
 const CategoryTable: React.FC = () => {
 

@@ -36,8 +36,11 @@ const CategoriaLanguage: React.FC = () => {
             <Header></Header>
             <div className="container">
 
-                <Subheader title="Lenguajes por Categoría" ></Subheader>
-                
+                {languagesc.map((lan: ILanguage,String) => (
+                        <Subheader 
+                        title={lan.category[0].name}
+                        />
+                    ))}
                 <div className="row text-center">
 
                     {languagesc.map((lan: ILanguage,index) => (
